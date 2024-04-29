@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel ongere">
+    <meta name="description" content="The official taccosite">
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="taco.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif; 
+    
+        }
+        
+        header {
+            background-color: #FF4500;
+            padding: 20px;
+            text-align: center;
+            animation: headerAnimation 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes headerAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        h1 {
+            color: #333;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        nav ul li a:hover {
+            color: #000;
+        }
+        
+        figure {
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            background-image:url(taccoo.jpeg);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+        
+        article {
+            margin-bottom: 40px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #ffcc00;
+        }
+        
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to The Little Taco Shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+                <li>
+                    <a href="contactinfo.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="img/tacco.jpeg" alt="Tacos and a Drink" title="We love tacos!" width="500"
+                height="267">
+            <figcaption>
+                Tacos and a Drink
+            </figcaption>
+        </figure>
+    </header>
+    <hr>
+    <main>
+        <article id="about">
+            <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
+            <p>
+                <abbr title="The Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our shop
+                was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop becomes an interesting
+                place to our little town.
+            </p>
+            <aside>
+                <h3>Taco history fact</h3>
+                <details>
+                    <summary>When did tacos first appear in the United Stated?</summary>
+                    <p>
+                        History: There is significant debate about the origins of the taco in Mexico, with some arguing that the taco predates the arrival of the Spanish in Mexico.
+                            
+                
+                    </p>
+                </details>
+            </aside>
+        </article>
+        <hr>
+        <article id="menu">
+            <h2>Our Menu</h2>
+            <table>
+                <caption>Our Tacos</caption>
+                <thead>
+                    <tr>
+                        <th>Tacos</th>
+                        <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">
+                            beef taco
+                        </th>
+                        <td>1</td>
+                        <td>ksh100.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ksh200.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ksh300.25</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="4">
+                            pork tacco
+                        </th>
+                        <td>1</td>
+                        <td>ksh200.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ksh300.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ksh400.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Chips &amp; Salsa ksh200
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <p>
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+</body>
+
+</html>
